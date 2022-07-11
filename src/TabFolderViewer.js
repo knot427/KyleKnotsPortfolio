@@ -51,9 +51,32 @@ export class TabFolderViewer extends React.Component {
                     </div>
                 )],
                 ['Skills', false, (
-                    <div >
-                        sample 2
-                    </div>
+                    <ul>
+                        <li>TypeScript</li>
+                        <li>JavaScript:
+                            <ul>
+                                <li>Three.js</li>
+                                <li>Node.js</li>
+                            </ul>
+                        </li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>C++</li>
+                        <li>Python:
+                            <ul>
+                                <li>Numpy</li>
+                                <li>PIL</li>
+                                <li>TensorFlow</li>
+                                <li>MatPlotLib</li>
+                                <li>Pandas</li>
+                            </ul>
+                        </li>
+                        <li>React</li>
+                        <li>Machine Learning</li>
+                        <li>OpenGL</li>
+                        <li>REST APIs</li>
+                        <li>Git</li>
+                    </ul>
                 )],
                 ['Projects', false, (
                     <ProjectViewer />
