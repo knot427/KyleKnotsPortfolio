@@ -1,0 +1,13 @@
+.flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+.bw-img {
+    filter: grayscale(1);
+    opacity: 0.1;
+}
+.name-title {
+    color: #c7f5f5;
+    font-size: 25vh;
+    font-family: sans-serif, Monospaced;
+}
