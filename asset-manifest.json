@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KyleKnotsPortfolio/static/css/main.9e00a46d.css",
-    "main.js": "/KyleKnotsPortfolio/static/js/main.7a8cb17d.js",
+    "main.js": "/KyleKnotsPortfolio/static/js/main.55e82a1e.js",
     "static/media/Resume Kyle Knot.pdf": "/KyleKnotsPortfolio/static/media/Resume Kyle Knot.9eb642f1b48f474aca60.pdf",
     "static/media/Puzzle Photo.png": "/KyleKnotsPortfolio/static/media/Puzzle Photo.fc126f262555622869db.png",
     "static/media/matplotliblogo.png": "/KyleKnotsPortfolio/static/media/matplotliblogo.1f3cb36363d0eb2c163f.png",
@@ -20,10 +20,10 @@
     "static/media/pdf-icon.png": "/KyleKnotsPortfolio/static/media/pdf-icon.3846e48fe8ac6c71f5fb.png",
     "index.html": "/KyleKnotsPortfolio/index.html",
     "main.9e00a46d.css.map": "/KyleKnotsPortfolio/static/css/main.9e00a46d.css.map",
-    "main.7a8cb17d.js.map": "/KyleKnotsPortfolio/static/js/main.7a8cb17d.js.map"
+    "main.55e82a1e.js.map": "/KyleKnotsPortfolio/static/js/main.55e82a1e.js.map"
   },
   "entrypoints": [
     "static/css/main.9e00a46d.css",
-    "static/js/main.7a8cb17d.js"
+    "static/js/main.55e82a1e.js"
   ]
 }
