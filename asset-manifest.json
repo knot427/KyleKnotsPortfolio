@@ -1,20 +1,29 @@
 {
   "files": {
-    "main.css": "/KyleKnotsPortfolio/static/css/main.8ca5bf1f.css",
-    "main.js": "/KyleKnotsPortfolio/static/js/main.bb8e035d.js",
+    "main.css": "/KyleKnotsPortfolio/static/css/main.9e00a46d.css",
+    "main.js": "/KyleKnotsPortfolio/static/js/main.7a8cb17d.js",
     "static/media/Resume Kyle Knot.pdf": "/KyleKnotsPortfolio/static/media/Resume Kyle Knot.9eb642f1b48f474aca60.pdf",
     "static/media/Puzzle Photo.png": "/KyleKnotsPortfolio/static/media/Puzzle Photo.fc126f262555622869db.png",
+    "static/media/matplotliblogo.png": "/KyleKnotsPortfolio/static/media/matplotliblogo.1f3cb36363d0eb2c163f.png",
+    "static/media/openglLogo.png": "/KyleKnotsPortfolio/static/media/openglLogo.9224c44d85efee1b56a9.png",
     "static/media/backgroundTiles.png": "/KyleKnotsPortfolio/static/media/backgroundTiles.3ff32afd657b6bd1cb1f.png",
     "static/media/MaybeBackground.jpeg": "/KyleKnotsPortfolio/static/media/MaybeBackground.2b810c09470343bac1e1.jpeg",
+    "static/media/pillowlogo.png": "/KyleKnotsPortfolio/static/media/pillowlogo.44bb69bd3fc03e26a7f7.png",
+    "static/media/javalogo.png": "/KyleKnotsPortfolio/static/media/javalogo.9d2f7d9fb9bfc24574f3.png",
+    "static/media/threejslogo.png": "/KyleKnotsPortfolio/static/media/threejslogo.e4e1dc624ac0dcf5f2cd.png",
     "static/media/croppedTransparentLogo.png": "/KyleKnotsPortfolio/static/media/croppedTransparentLogo.159fa61957e9f99985c6.png",
+    "static/media/pythonlogo.png": "/KyleKnotsPortfolio/static/media/pythonlogo.3ca975d4a41d26749e54.png",
+    "static/media/nodejslogo.png": "/KyleKnotsPortfolio/static/media/nodejslogo.8e341cc00e4ec40c6a27.png",
     "static/media/star.png": "/KyleKnotsPortfolio/static/media/star.c01b2a57c16c3c16f5f3.png",
+    "static/media/numpylogo.png": "/KyleKnotsPortfolio/static/media/numpylogo.fd2aba20186cb552a8ce.png",
+    "static/media/JavaScriptlogo.png": "/KyleKnotsPortfolio/static/media/JavaScriptlogo.266bd9fb2663dcc057b4.png",
     "static/media/pdf-icon.png": "/KyleKnotsPortfolio/static/media/pdf-icon.3846e48fe8ac6c71f5fb.png",
     "index.html": "/KyleKnotsPortfolio/index.html",
-    "main.8ca5bf1f.css.map": "/KyleKnotsPortfolio/static/css/main.8ca5bf1f.css.map",
-    "main.bb8e035d.js.map": "/KyleKnotsPortfolio/static/js/main.bb8e035d.js.map"
+    "main.9e00a46d.css.map": "/KyleKnotsPortfolio/static/css/main.9e00a46d.css.map",
+    "main.7a8cb17d.js.map": "/KyleKnotsPortfolio/static/js/main.7a8cb17d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ca5bf1f.css",
-    "static/js/main.bb8e035d.js"
+    "static/css/main.9e00a46d.css",
+    "static/js/main.7a8cb17d.js"
   ]
 }
