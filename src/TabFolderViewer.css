@@ -1,0 +1,13 @@
+.tab{
+    color: black;
+}
+
+.tab:hover{
+    color: royalblue;
+}
+
+.contentPane {
+    width: 100%;
+    max-width: 500px;
+    min-width: 500px;
+}

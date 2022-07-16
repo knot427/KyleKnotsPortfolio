@@ -28,7 +28,7 @@ export class ImagePuzzleBoard extends React.Component {
                 clearInterval(id);
                 let newState = {
                     data: this.state.data.slice(),
-                    text: "Slide tiles into the space to reassemble the picture.",
+                    text: "Click to slide tiles into the empty space to re-assemble the picture.",
                 };
                 this.setState(newState);
             }, shuffleSwaps * swapTime);
@@ -43,7 +43,8 @@ export class ImagePuzzleBoard extends React.Component {
                 borderRadius: 4,
                 borderColor: '#000000FF',
                 width: '100%',
-                maxWidth: this.props.width
+                maxWidth: this.props.width,
+                color: "gray",
             }}>
                 <div style={{
                     backgroundColor: '#323232FF',
@@ -62,11 +63,8 @@ export class ImagePuzzleBoard extends React.Component {
                         )
                     }
                 </div>
-
                 {this.state.text}
             </div>
-
-
         );
 
     }

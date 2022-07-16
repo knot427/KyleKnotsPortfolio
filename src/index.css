@@ -3,6 +3,37 @@
     padding: 0;
 }
 
+:root {
+    background: black url("./assets/MaybeBackground.jpeg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.mainPage {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.mainCenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (min-width: 1247px) {
+    .mainPage {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .mainCenter {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
 .box-row {
     display: flex;
     justify-content: space-evenly;
@@ -24,7 +55,19 @@
 
 .text-box {
     margin: 5vh;
-    background-color: #c7f5f5;
+    padding: 8px;
+    background-color: #ffdfa3;
     border-radius: 10px;
-    border: 2px solid #2138ad;
+    border: 2px solid #b28104;
+}
+
+.link {
+    text-decoration: none;
+    color: mediumblue;
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: none;
+    color: deepskyblue;
 }

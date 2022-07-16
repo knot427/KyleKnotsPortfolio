@@ -1,5 +1,7 @@
 import React from 'react';
 import {ProjectViewer} from "./projectViewer";
+import "./TabFolderViewer.css"
+import {SkillViewer} from "./skillViewer";
 
 const identityTile = require('./assets/backgroundTiles.png');
 
@@ -51,32 +53,10 @@ export class TabFolderViewer extends React.Component {
                     </div>
                 )],
                 ['Skills', false, (
-                    <ul>
-                        <li>TypeScript</li>
-                        <li>JavaScript:
-                            <ul>
-                                <li>Three.js</li>
-                                <li>Node.js</li>
-                            </ul>
-                        </li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>C++</li>
-                        <li>Python:
-                            <ul>
-                                <li>Numpy</li>
-                                <li>PIL</li>
-                                <li>TensorFlow</li>
-                                <li>MatPlotLib</li>
-                                <li>Pandas</li>
-                            </ul>
-                        </li>
-                        <li>React</li>
-                        <li>Machine Learning</li>
-                        <li>OpenGL</li>
-                        <li>REST APIs</li>
-                        <li>Git</li>
-                    </ul>
+                    <div style={{height: '100%'}}>
+                        <SkillViewer rateing={4} />
+                    </div>
+
                 )],
                 ['Projects', false, (
                     <ProjectViewer />
@@ -86,8 +66,7 @@ export class TabFolderViewer extends React.Component {
 
     render() {
         return(
-            <div style={{
-            }}>
+            <div>
                 <div className={'box-row'} style={{
                     display: 'flex',
                     justifyContent: 'left',
@@ -95,14 +74,13 @@ export class TabFolderViewer extends React.Component {
                 }}>
                     {this.state.tabs.map((tab) => this.drawTab(tab[0], tab[1]))}
                 </div>
-                <div style={{
+                <div className={"contentPane"} style={{
                     height: '66vh',
-                    width: '100%',
-                    maxWidth: '435px',
-                    backgroundColor: '#c7f5f5',
+                    backgroundColor: '#ffdfa3',
                     borderRadius: '10px',
                     border: '4px solid ' + this.props.borderColour,
                     overflow: 'hidden',
+                    alignItems:"stretch",
                 }}>
                     {this.state.tabs.map((tab) => tab[1]? tab[2] : (<></>))}
                 </div>
@@ -118,29 +96,33 @@ export class TabFolderViewer extends React.Component {
                 borderLeft: '20px solid transparent',
                 borderRight: '20px solid transparent',
                 height: 0,
-                width: '100px',
                 justifyContent: 'center',
 
                 fontFamily: 'sans-serif',
             }
+            return(
+                <div onClick={() => this.setActive(text)} key={text} style={style}>
+                    {text}
+                </div>
+            )
         } else {
             style = {
                 borderBottom: '20px solid ' + this.props.inactiveColour,
                 borderLeft: '20px solid transparent',
                 borderRight: '20px solid transparent',
                 height: 0,
-                width: '100px',
                 justifyContent: 'center',
-
+                cursor: 'pointer',
                 fontFamily: 'sans-serif',
             }
+            return(
+                <div className={"tab"} onClick={() => this.setActive(text)} key={text} style={style}>
+                    {text}
+                </div>
+            )
         }
 
-        return(
-            <div onClick={() => this.setActive(text)} key={text} style={style}>
-                {text}
-            </div>
-        )
+
     }
 
     setActive(text) {
