@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KyleKnotsPortfolio/static/css/main.9e00a46d.css",
-    "main.js": "/KyleKnotsPortfolio/static/js/main.02255beb.js",
+    "main.js": "/KyleKnotsPortfolio/static/js/main.2fa515a3.js",
     "static/media/Resume Kyle Knot.pdf": "/KyleKnotsPortfolio/static/media/Resume Kyle Knot.9eb642f1b48f474aca60.pdf",
     "static/media/Puzzle Photo.png": "/KyleKnotsPortfolio/static/media/Puzzle Photo.fc126f262555622869db.png",
     "static/media/fadeLogo.PNG": "/KyleKnotsPortfolio/static/media/fadeLogo.5bb52972fc4537f15de1.PNG",
@@ -24,10 +24,10 @@
     "static/media/pdf-icon.png": "/KyleKnotsPortfolio/static/media/pdf-icon.3846e48fe8ac6c71f5fb.png",
     "index.html": "/KyleKnotsPortfolio/index.html",
     "main.9e00a46d.css.map": "/KyleKnotsPortfolio/static/css/main.9e00a46d.css.map",
-    "main.02255beb.js.map": "/KyleKnotsPortfolio/static/js/main.02255beb.js.map"
+    "main.2fa515a3.js.map": "/KyleKnotsPortfolio/static/js/main.2fa515a3.js.map"
   },
   "entrypoints": [
     "static/css/main.9e00a46d.css",
-    "static/js/main.02255beb.js"
+    "static/js/main.2fa515a3.js"
   ]
 }
