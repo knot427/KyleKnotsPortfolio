@@ -32,7 +32,7 @@ export class ImagePuzzleBoard extends React.Component {
                 };
                 this.setState(newState);
             }, shuffleSwaps * swapTime);
-        }, 1500);
+        }, 3000);
     }
 
     render() {

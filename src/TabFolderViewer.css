@@ -8,6 +8,21 @@
 
 .contentPane {
     width: 100%;
-    max-width: 500px;
-    min-width: 500px;
+    max-width: 95vw;
+    min-width: 95vw;
 }
+
+@media (max-width: 515px) {
+    .contentPane {
+        width: 95%;
+    }
+}
+
+@media (min-width: 1247px) {
+    .contentPane {
+        width: 100%;
+        max-width: 500px;
+        min-width: 500px;
+    }
+}
+

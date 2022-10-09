@@ -23,23 +23,24 @@ export class SkillViewer extends React.Component {
         super(props);
         this.state = {
             projectArray: [
-                ['TypeScript', 'I have used TypeScript for the creation of servers and implementing the server side of REST APIs', tsLogo, null, 5],
-                ['JavaScript', 'I have used javascript for the creation of webpages as well as graphical applications using Three.js.', jsLogo, "https://github.com/knot427/KyleKnotsPortfolio", 4],
+                ['AWS', 'I have work experience configuring and interacting with a number of AWS services including AWS IOT Core, DynamoDB, and Lambda.', null, null, 5],
+                ['TypeScript', 'I have used TypeScript for the creation of servers and implementing the server side of REST APIs.', tsLogo, null, 5],
+                ['JavaScript', 'I have used JavaScript for the creation of webpages as well as for graphical applications using Three.js.', jsLogo, "https://github.com/knot427/KyleKnotsPortfolio", 4],
                 ['Three.js', 'Using Three.js I have created 3D and sprite animations. I have used it for rigging, running my own custom shaders, and creating custom procedural scenes.', threejsLogo, null, 4],
-                ['Node.js', 'I have used Node.js to create several servers including websites, and API services.', nodejsLogo, null, 4],
-                ['Java', 'Java was the first language I understood thoroughly. I have created a number of applications, including graphical, an API service, and networking related applications.', javaLogo, null, 5],
+                ['Node.js', 'I have used Node.js to create several servers including websites and API services.', nodejsLogo, null, 4],
+                ['Java', 'Java was the first language I understood thoroughly. I have created a number of applications, including graphical applications, an API service, and networking related applications.', javaLogo, null, 5],
                 ['SQL', 'I have used SQL queries as in database management contexts as well as part of an API service.', sqlLogo, null, 5],
-                ['Python', 'Python has been my language of choice for accomplishing simple tasks, machine learning, data manipulation, networking related scripts, image processing, and solving difficult math problems. I am also familiar with object oriented python as well as working with it collaboratively in a notebook setting.', pythonLogo, null, 5],
+                ['Python', 'Python has been my language of choice for accomplishing simple tasks, machine learning, data manipulation, networking related scripts, image processing, and solving difficult math problems. I am also familiar with object-oriented Python as well as working with it collaboratively in a notebook setting.', pythonLogo, null, 5],
                 ['NumPy', 'I have used NumPy for data processing, mathematical problem solving, computer vision, and machine learning.', numpyLogo, null, 5],
                 ['PIL', 'I have used Pillow for image manipulation, computer vision, and preparing machine learning datasets.', pilLogo, null, 4],
                 ['TensorFlow', 'Using TensorFlow I have created, trained, and used neural networks, convolutional neural networks, and image recognition systems. I have used it both locally and in remote settings.', tensorflowLogo, null, 4],
-                ['MatPlotLib', 'I have used MatPlotLib to visualize various types of data, presentation of data, and for human in the loop data analysis.', matplotlibLogo, null, 4],
-                ['Pandas', 'I have used Pandas to lead data and files in machine learning, data science, and computer vision applications.', pandasLogo, null, 4],
-                ['React', 'I have made a couple UIs using react including this digital portfolio.', reactLogo, null, 4],
+                ['MatPlotLib', 'I have used Matplotlib to visualize various types of data, presentation of data, and for human in the loop data analysis.', matplotlibLogo, null, 4],
+                ['Pandas', 'I have used Pandas to clean data and manage files for the purpose of machine learning, data science, and computer vision applications. ', pandasLogo, null, 4],
+                ['React', 'I have made UIs using react including this digital portfolio.', reactLogo, null, 4],
                 ['Machine Learning', 'I have used various machine learning techniques for classification, clustering, regression, and generation. Including but not limited to outlier detection, object recognition, prediction tasks, and image generation.', null, null, 4],
                 ['OpenGL', 'I have used OpenGL in C++ for 2D and 3D tasks. I have written my own vertex and fragment shaders, and have created interactive applications using it.', openglLogo, null, 4],
                 ['REST APIs', 'I have created and implemented Rest APIs both on the client side and the server sides.', null, null, 5],
-                ['Git', 'Almost every project I have worked on above a certain size has used git. I have practice managing multiple branches, working collaboratively, and fixing issues when necessary.', gitLogo, null, 5],
+                ['Git', 'Almost every project of a substantial enough size I have worked on has used git. I have practice managing multiple branches, working collaboratively, and fixing issues when necessary.', gitLogo, null, 5],
             ],
             rightDisplay: (<></>),
         }
@@ -121,6 +122,5 @@ export class SkillViewer extends React.Component {
 
             </div>
         );
-
     }
 }

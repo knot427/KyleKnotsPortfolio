@@ -6,30 +6,23 @@ import{TabFolderViewer} from "./TabFolderViewer";
 const resumePDF = require('./assets/Resume Kyle Knot.pdf');
 const pdfSVG = require('./assets/pdf-icon.png');
 const transparentLogoPNG = require('./assets/croppedTransparentLogo.png');
-const logo2Transparent = require('./assets/logo2transparent.png');
+const logo2Transparent = require('./assets/fadeLogo.PNG');
 
 class HomePage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            size: 50,
+            opacity: 100,
         };
-        let interval = setInterval(() => {
-            console.log("running 1");
-            this.setState({size: this.state.size + 0.5});
-        }, 20);
+
         setTimeout(() => {
-            clearInterval(interval);
-            this.setState({size: 100});
-            interval = setInterval(() => {
-                console.log("running 2");
-                this.setState({size: this.state.size - 0.5});
-            },10);
-        }, 2000);
-        setTimeout(() => {
-            clearInterval(interval);
-            this.setState({size: 0});
-        }, 6000);
+            let intId = setInterval( () => {
+                this.setState({opacity: this.state.opacity - 1});
+                if (this.state.opacity <= 0) {
+                    clearInterval(intId);
+                }
+            }, 10);
+        }, 1000);
     }
 
 
@@ -92,23 +85,15 @@ class HomePage extends React.Component {
                             <ImagePuzzleBoard rows={4} columns={4} width={300} height={300} />
                         </div>
                         </div>
-                    {this.state.size <= 0? <></> :
-                        <div style={{
+                    {this.state.opacity <= 0? <></> :
+                        <img src={logo2Transparent} alt={'Kyle Knot'} style={{
                             width: '100%',
                             height: '100%',
                             position: 'absolute',
                             top: 0,
                             left: 0,
-                        }}>
-                                <img src={logo2Transparent} alt={'Kyle Knot'} style={{
-                                    width: this.state.size + "%",
-                                    height: this.state.size + "%",
-                                    position: 'relative',
-                                    top: (50 - (this.state.size / 2)) + '%',
-                                    left: (50 - (this.state.size / 2)) + '%',
-                                    opacity: this.state.size / 100,
-                                }} />
-                        </div>
+                            opacity: this.state.opacity / 100,
+                        }} />
                     }
                 </div>
         );
